@@ -79,8 +79,8 @@ public struct SideMenu : View {
                                             self.sideMenuLeftPanel.toggle()
                                         }
                                     }, label: {
-                                        Image(systemName: "sidebar.left")
-                                            .accentColor(.blue)
+                                        Image(systemName: config.leftNavigationBarItemName)
+                                            .accentColor(config.leftNavigationBarItemColor)
                                             .imageScale(.large)
                                     }),
                                     trailing: Button(action: {
@@ -88,8 +88,8 @@ public struct SideMenu : View {
                                             self.sideMenuRightPanel.toggle()
                                         }
                                     }, label: {
-                                        Image(systemName: "sidebar.right")
-                                            .accentColor(.red)
+                                        Image(systemName: config.rightNavigationBarItemName)
+                                            .accentColor(config.rightNavigationBarItemColor)
                                             .imageScale(.large)
                                     })
                                 )
@@ -103,8 +103,8 @@ public struct SideMenu : View {
                                                 self.sideMenuLeftPanel.toggle()
                                             }
                                         }, label: {
-                                            Image(systemName: "sidebar.left")
-                                                .accentColor(.blue)
+                                            Image(systemName: config.leftNavigationBarItemName)
+                                                .accentColor(config.leftNavigationBarItemColor)
                                                 .imageScale(.large)
                                         })
                                     )
@@ -118,8 +118,8 @@ public struct SideMenu : View {
                                                 self.sideMenuRightPanel.toggle()
                                             }
                                         }, label: {
-                                            Image(systemName: "sidebar.right")
-                                                .accentColor(.red)
+                                            Image(systemName: config.rightNavigationBarItemName)
+                                                .accentColor(config.rightNavigationBarItemColor)
                                                 .imageScale(.large)
                                         })
                                 )
